@@ -47,6 +47,7 @@
 		6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPrompt.swift; sourceTree = "<group>"; };
 		6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPromptType.swift; sourceTree = "<group>"; };
 		6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReviewPrompt.swift"; sourceTree = "<group>"; };
+		6A2B98C82CB6BEEB005AA641 /* SwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		6A2B98A52CB66941005AA641 /* GrokSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6A2B98C72CB6BEDF005AA641 /* TestFiles */,
 				6A2B98C32CB6829A005AA641 /* Prompts */,
 				6A2B98BC2CB679E2005AA641 /* Service */,
 				6A2B98BB2CB679D7005AA641 /* DTOs */,
@@ -117,6 +119,14 @@
 				6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */,
 			);
 			path = Prompts;
+			sourceTree = "<group>";
+		};
+		6A2B98C72CB6BEDF005AA641 /* TestFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6A2B98C82CB6BEEB005AA641 /* SwiftTest.swift */,
+			);
+			path = TestFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
