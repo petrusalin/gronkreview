@@ -13,19 +13,20 @@ final class GrokRequest: Request {
         case encoding
     }
     
-    private static let key: String = "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"
     private let endpoint: String = "https://api.groq.com/openai/v1/chat/completions"
     
+    private let apiKey: String
     private let dto: GrokMessage
     
     private var headers: [String: String] {
         [
             "Content-Type": "application/json",
-            "Authorization": "Bearer \(Self.key)"
+            "Authorization": "Bearer \(self.apiKey)"
         ]
     }
     
-    init(content: String) {
+    init(content: String, key: String) {
+        self.apiKey = key
         self.dto = GrokMessage(messages: [GrokContent(content: content)])
     }
     

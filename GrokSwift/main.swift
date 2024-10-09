@@ -8,14 +8,15 @@
 import Foundation
 
 func run() async {
-    guard CommandLine.arguments.count == 2 else {
-        print("Usage: ./GrokSwift {SwiftFilePath}.swift")
+    guard CommandLine.arguments.count == 3 else {
+        print("Usage: ./GrokSwift {SwiftFilePath}.swift {apiKey}")
         return
     }
     let filePath = CommandLine.arguments[1]
+    let key = CommandLine.arguments[2]
     
     guard filePath.components(separatedBy: ".").last == "swift" else {
-        print("Usage: ./GrokSwift {SwiftFilePath}.swift")
+        print("Usage: ./GrokSwift {SwiftFilePath}.swift {apiKey}")
         return
     }
     
@@ -29,7 +30,8 @@ func run() async {
     let service = GrokReviewService()
     
     do {
-        let review = try await service.requestReview(withContent: code, 
+        let review = try await service.requestReview(apiKey: key,
+                                                     withContent: code, 
                                                      prompt: ReviewPromptType.swift)
         
         // should write to a file

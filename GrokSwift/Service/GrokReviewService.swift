@@ -27,9 +27,11 @@ public enum NetworkError: Error {
 final class GrokReviewService {
     private let session: URLSession = URLSession.shared
     
-    func requestReview(withContent content: String, 
+    func requestReview(apiKey: String,
+                       withContent content: String,
                        prompt: some ReviewPrompt) async throws -> GrokReview {
-        let request = try GrokRequest(content: prompt.asPromptText() + content).asURLRequest()
+        let request = try GrokRequest(content: prompt.asPromptText() + content,
+                                      key: apiKey).asURLRequest()
         
         let response = try await self.session.data(for: request)
         

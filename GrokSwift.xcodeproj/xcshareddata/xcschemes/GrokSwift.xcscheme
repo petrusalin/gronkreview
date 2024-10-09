@@ -56,6 +56,10 @@
             argument = "/Users/alin.petrus/Projects/Tests/GrokSwift/GrokSwift/Service/GrokRequest.swift"
             isEnabled = "YES">
          </CommandLineArgument>
+         <CommandLineArgument
+            argument = "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"
+            isEnabled = "YES">
+         </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
