@@ -24,12 +24,12 @@ public enum NetworkError: Error {
     case tokenExpired
 }
 
-final class GrokReviewService {
+final class GrokReviewService: ReviewService {
     private let session: URLSession = URLSession.shared
     
     func requestReview(apiKey: String,
                        withContent content: String,
-                       prompt: some ReviewPrompt) async throws -> GrokReview {
+                       prompt: some ReviewPrompt) async throws -> ReviewOutput {
         let request = try GrokRequest(content: prompt.asPromptText() + content,
                                       key: apiKey).asURLRequest()
         

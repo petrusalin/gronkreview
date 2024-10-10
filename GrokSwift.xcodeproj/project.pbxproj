@@ -19,6 +19,11 @@
 		6A2B98C02CB68229005AA641 /* ReviewPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */; };
 		6A2B98C22CB68247005AA641 /* ReviewPromptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */; };
 		6A2B98C52CB6A8E0005AA641 /* String+ReviewPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */; };
+		6A5DA49F2CB7D21100B2B1EB /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA49E2CB7D21100B2B1EB /* ReviewService.swift */; };
+		6A5DA4A12CB7D2A300B2B1EB /* ReviewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4A02CB7D2A300B2B1EB /* ReviewOutput.swift */; };
+		6A5DA4A32CB7D36400B2B1EB /* GrokReview+Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */; };
+		6A5DA4BB2CB7D58B00B2B1EB /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4BA2CB7D58B00B2B1EB /* ServiceFactory.swift */; };
+		6A5DA4BD2CB7D59800B2B1EB /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,6 +53,11 @@
 		6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPromptType.swift; sourceTree = "<group>"; };
 		6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReviewPrompt.swift"; sourceTree = "<group>"; };
 		6A2B98C82CB6BEEB005AA641 /* SwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
+		6A5DA49E2CB7D21100B2B1EB /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		6A5DA4A02CB7D2A300B2B1EB /* ReviewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewOutput.swift; sourceTree = "<group>"; };
+		6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GrokReview+Output.swift"; sourceTree = "<group>"; };
+		6A5DA4BA2CB7D58B00B2B1EB /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +90,9 @@
 		6A2B98A52CB66941005AA641 /* GrokSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6A5DA4B62CB7D4FB00B2B1EB /* Groq */,
+				6A5DA4B52CB7D4F200B2B1EB /* Generics */,
 				6A2B98C72CB6BEDF005AA641 /* TestFiles */,
-				6A2B98C32CB6829A005AA641 /* Prompts */,
-				6A2B98BC2CB679E2005AA641 /* Service */,
-				6A2B98BB2CB679D7005AA641 /* DTOs */,
 				6A2B98A62CB66941005AA641 /* main.swift */,
 			);
 			path = GrokSwift;
@@ -104,9 +113,11 @@
 		6A2B98BC2CB679E2005AA641 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				6A2B98AD2CB66955005AA641 /* GrokRequest.swift */,
+				6A5DA4BA2CB7D58B00B2B1EB /* ServiceFactory.swift */,
 				6A2B98AF2CB66972005AA641 /* Request.swift */,
-				6A2B98B12CB66EF9005AA641 /* GrokReviewService.swift */,
+				6A5DA49E2CB7D21100B2B1EB /* ReviewService.swift */,
+				6A5DA4A02CB7D2A300B2B1EB /* ReviewOutput.swift */,
+				6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -115,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */,
-				6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */,
 				6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */,
+				6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */,
 			);
 			path = Prompts;
 			sourceTree = "<group>";
@@ -127,6 +138,34 @@
 				6A2B98C82CB6BEEB005AA641 /* SwiftTest.swift */,
 			);
 			path = TestFiles;
+			sourceTree = "<group>";
+		};
+		6A5DA4B52CB7D4F200B2B1EB /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				6A2B98BC2CB679E2005AA641 /* Service */,
+				6A2B98C32CB6829A005AA641 /* Prompts */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		6A5DA4B62CB7D4FB00B2B1EB /* Groq */ = {
+			isa = PBXGroup;
+			children = (
+				6A2B98BB2CB679D7005AA641 /* DTOs */,
+				6A5DA4B72CB7D50400B2B1EB /* Service */,
+			);
+			path = Groq;
+			sourceTree = "<group>";
+		};
+		6A5DA4B72CB7D50400B2B1EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6A2B98AD2CB66955005AA641 /* GrokRequest.swift */,
+				6A2B98B12CB66EF9005AA641 /* GrokReviewService.swift */,
+				6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,13 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A2B98B82CB679AC005AA641 /* GrokMessage.swift in Sources */,
+				6A5DA4BD2CB7D59800B2B1EB /* ServiceType.swift in Sources */,
+				6A5DA49F2CB7D21100B2B1EB /* ReviewService.swift in Sources */,
 				6A2B98B22CB66EF9005AA641 /* GrokReviewService.swift in Sources */,
 				6A2B98BE2CB67AB9005AA641 /* GrokUsage.swift in Sources */,
+				6A5DA4A12CB7D2A300B2B1EB /* ReviewOutput.swift in Sources */,
 				6A2B98BA2CB679C4005AA641 /* GrokContent.swift in Sources */,
 				6A2B98C22CB68247005AA641 /* ReviewPromptType.swift in Sources */,
 				6A2B98B62CB67970005AA641 /* GrokChoice.swift in Sources */,
+				6A5DA4BB2CB7D58B00B2B1EB /* ServiceFactory.swift in Sources */,
 				6A2B98C02CB68229005AA641 /* ReviewPrompt.swift in Sources */,
 				6A2B98B42CB6793B005AA641 /* GrokReview.swift in Sources */,
+				6A5DA4A32CB7D36400B2B1EB /* GrokReview+Output.swift in Sources */,
 				6A2B98AE2CB66955005AA641 /* GrokRequest.swift in Sources */,
 				6A2B98B02CB66972005AA641 /* Request.swift in Sources */,
 				6A2B98C52CB6A8E0005AA641 /* String+ReviewPrompt.swift in Sources */,

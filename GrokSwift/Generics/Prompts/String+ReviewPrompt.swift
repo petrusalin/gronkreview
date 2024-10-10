@@ -14,3 +14,11 @@ extension String: ReviewPrompt {
     }
     
 }
+
+extension String: ReviewOutput {
+    
+    func asText() -> String {
+        self
+    }
+    
+}

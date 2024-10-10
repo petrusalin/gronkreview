@@ -97,7 +97,7 @@ enum ReviewPromptType: ReviewPrompt {
         - user data should be secure
         - API keys should not be stored plain in code
         
-        Only provide feedback if any of the above requirements is violated. If ok or not applicable, no feedback is needed.
+        Only provide feedback on the blocks of code where any of the above requirements are violated. Include the block of code for which the feedback is given in in the output.
         
         The code to review is the following:
         """

@@ -27,23 +27,16 @@ func run() async {
         return
     }
     
-    let service = GrokReviewService()
+    let service = ServiceFactory.service(forType: .groq)
     
     do {
         let review = try await service.requestReview(apiKey: key,
                                                      withContent: code, 
                                                      prompt: ReviewPromptType.swift)
         
-        // should write to a file
-        review.choices.forEach { choice in
-            print("========================================")
-            print("\n")
-            print(choice.message.content)
-            print("\n")
-            print("========================================")
-        }
+        print(review.asText())
     } catch {
-        print(error)
+        print("Got an error: error")
     }
 
 }
