@@ -1,20 +1,20 @@
 //
-//  GrokService.swift
+//  OpenAIService.swift
 //  GrokSwift
 //
-//  Created by Alin Petrus on 09.10.2024.
+//  Created by Alin Petrus on 14.10.2024.
 //
 
 import Foundation
 
-final class GrokReviewService: ReviewService {
+final class OpenAIService: ReviewService {
     private let session: URLSession = URLSession.shared
     
     func requestReview(apiKey: String,
                        withContent content: String,
                        prompt: some ReviewPrompt) async throws -> ReviewOutput {
-        let request = try GrokRequest(content: prompt.asPromptText() + content,
-                                      key: apiKey).asURLRequest()
+        let request = try OpenAIRequest(content: prompt.asPromptText() + content,
+                                        key: apiKey).asURLRequest()
         
         let response = try await self.session.data(for: request)
         
@@ -26,7 +26,7 @@ final class GrokReviewService: ReviewService {
             throw error
         }
         
-        return try JSONDecoder().decode(GrokReview.self, from: response.0)
+        return try JSONDecoder().decode(OpenAIReview.self, from: response.0)
     }
     
 }

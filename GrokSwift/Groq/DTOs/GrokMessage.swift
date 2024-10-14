@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct GrokMessage: Encodable {
-    let messages: [GrokContent]
-    let model: String = "mixtral-8x7b-32768"
+struct GrokMessage: Codable {
+    let role: String
+    let content: String
     
-    
+    init(role: String = "user", content: String) {
+        self.role = role
+        self.content = content
+    }
 }

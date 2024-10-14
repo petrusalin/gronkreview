@@ -7,6 +7,7 @@
 
 import Foundation
 
-enum ServiceType {
+enum ServiceType: String {
     case groq
+    case openAI
 }

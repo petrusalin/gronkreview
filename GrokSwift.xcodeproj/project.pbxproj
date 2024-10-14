@@ -13,8 +13,8 @@
 		6A2B98B22CB66EF9005AA641 /* GrokReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B12CB66EF9005AA641 /* GrokReviewService.swift */; };
 		6A2B98B42CB6793B005AA641 /* GrokReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B32CB6793B005AA641 /* GrokReview.swift */; };
 		6A2B98B62CB67970005AA641 /* GrokChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B52CB67970005AA641 /* GrokChoice.swift */; };
-		6A2B98B82CB679AC005AA641 /* GrokMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B72CB679AC005AA641 /* GrokMessage.swift */; };
-		6A2B98BA2CB679C4005AA641 /* GrokContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B92CB679C4005AA641 /* GrokContent.swift */; };
+		6A2B98B82CB679AC005AA641 /* GrokRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B72CB679AC005AA641 /* GrokRequestDTO.swift */; };
+		6A2B98BA2CB679C4005AA641 /* GrokMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98B92CB679C4005AA641 /* GrokMessage.swift */; };
 		6A2B98BE2CB67AB9005AA641 /* GrokUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98BD2CB67AB9005AA641 /* GrokUsage.swift */; };
 		6A2B98C02CB68229005AA641 /* ReviewPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */; };
 		6A2B98C22CB68247005AA641 /* ReviewPromptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */; };
@@ -24,6 +24,16 @@
 		6A5DA4A32CB7D36400B2B1EB /* GrokReview+Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */; };
 		6A5DA4BB2CB7D58B00B2B1EB /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4BA2CB7D58B00B2B1EB /* ServiceFactory.swift */; };
 		6A5DA4BD2CB7D59800B2B1EB /* ServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */; };
+		6AB742992CBD069F00E950EF /* OpenAIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742982CBD069F00E950EF /* OpenAIRequest.swift */; };
+		6AB7429C2CBD0BD700E950EF /* OpenAIRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7429B2CBD0BD700E950EF /* OpenAIRequestDTO.swift */; };
+		6AB7429E2CBD0C1700E950EF /* OpenAIMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7429D2CBD0C1700E950EF /* OpenAIMessage.swift */; };
+		6AB742A02CBD111800E950EF /* OpenAIChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB7429F2CBD111800E950EF /* OpenAIChoice.swift */; };
+		6AB742A22CBD115A00E950EF /* OpenAIUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742A12CBD115A00E950EF /* OpenAIUsage.swift */; };
+		6AB742A42CBD11B000E950EF /* OpenAIReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742A32CBD11B000E950EF /* OpenAIReview.swift */; };
+		6AB742A62CBD120600E950EF /* OpenAIReview+Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742A52CBD120600E950EF /* OpenAIReview+Output.swift */; };
+		6AB742A82CBD122B00E950EF /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742A72CBD122B00E950EF /* OpenAIService.swift */; };
+		6AB742AA2CBD127000E950EF /* HTTPURLResponse+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742A92CBD127000E950EF /* HTTPURLResponse+Utils.swift */; };
+		6AB742AE2CBD4C8A00E950EF /* SwiftPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB742AD2CBD4C8A00E950EF /* SwiftPrompt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,8 +56,8 @@
 		6A2B98B12CB66EF9005AA641 /* GrokReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokReviewService.swift; sourceTree = "<group>"; };
 		6A2B98B32CB6793B005AA641 /* GrokReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokReview.swift; sourceTree = "<group>"; };
 		6A2B98B52CB67970005AA641 /* GrokChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokChoice.swift; sourceTree = "<group>"; };
-		6A2B98B72CB679AC005AA641 /* GrokMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokMessage.swift; sourceTree = "<group>"; };
-		6A2B98B92CB679C4005AA641 /* GrokContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokContent.swift; sourceTree = "<group>"; };
+		6A2B98B72CB679AC005AA641 /* GrokRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokRequestDTO.swift; sourceTree = "<group>"; };
+		6A2B98B92CB679C4005AA641 /* GrokMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokMessage.swift; sourceTree = "<group>"; };
 		6A2B98BD2CB67AB9005AA641 /* GrokUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrokUsage.swift; sourceTree = "<group>"; };
 		6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPrompt.swift; sourceTree = "<group>"; };
 		6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPromptType.swift; sourceTree = "<group>"; };
@@ -58,6 +68,16 @@
 		6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GrokReview+Output.swift"; sourceTree = "<group>"; };
 		6A5DA4BA2CB7D58B00B2B1EB /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
 		6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceType.swift; sourceTree = "<group>"; };
+		6AB742982CBD069F00E950EF /* OpenAIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRequest.swift; sourceTree = "<group>"; };
+		6AB7429B2CBD0BD700E950EF /* OpenAIRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIRequestDTO.swift; sourceTree = "<group>"; };
+		6AB7429D2CBD0C1700E950EF /* OpenAIMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIMessage.swift; sourceTree = "<group>"; };
+		6AB7429F2CBD111800E950EF /* OpenAIChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIChoice.swift; sourceTree = "<group>"; };
+		6AB742A12CBD115A00E950EF /* OpenAIUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIUsage.swift; sourceTree = "<group>"; };
+		6AB742A32CBD11B000E950EF /* OpenAIReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIReview.swift; sourceTree = "<group>"; };
+		6AB742A52CBD120600E950EF /* OpenAIReview+Output.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAIReview+Output.swift"; sourceTree = "<group>"; };
+		6AB742A72CBD122B00E950EF /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		6AB742A92CBD127000E950EF /* HTTPURLResponse+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Utils.swift"; sourceTree = "<group>"; };
+		6AB742AD2CBD4C8A00E950EF /* SwiftPrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPrompt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +110,7 @@
 		6A2B98A52CB66941005AA641 /* GrokSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6AB742962CBD066500E950EF /* OpenAI */,
 				6A5DA4B62CB7D4FB00B2B1EB /* Groq */,
 				6A5DA4B52CB7D4F200B2B1EB /* Generics */,
 				6A2B98C72CB6BEDF005AA641 /* TestFiles */,
@@ -103,8 +124,8 @@
 			children = (
 				6A2B98B32CB6793B005AA641 /* GrokReview.swift */,
 				6A2B98B52CB67970005AA641 /* GrokChoice.swift */,
-				6A2B98B72CB679AC005AA641 /* GrokMessage.swift */,
-				6A2B98B92CB679C4005AA641 /* GrokContent.swift */,
+				6A2B98B72CB679AC005AA641 /* GrokRequestDTO.swift */,
+				6A2B98B92CB679C4005AA641 /* GrokMessage.swift */,
 				6A2B98BD2CB67AB9005AA641 /* GrokUsage.swift */,
 			);
 			path = DTOs;
@@ -118,6 +139,7 @@
 				6A5DA49E2CB7D21100B2B1EB /* ReviewService.swift */,
 				6A5DA4A02CB7D2A300B2B1EB /* ReviewOutput.swift */,
 				6A5DA4BC2CB7D59800B2B1EB /* ServiceType.swift */,
+				6AB742A92CBD127000E950EF /* HTTPURLResponse+Utils.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -128,6 +150,7 @@
 				6A2B98BF2CB68228005AA641 /* ReviewPrompt.swift */,
 				6A2B98C42CB6A8E0005AA641 /* String+ReviewPrompt.swift */,
 				6A2B98C12CB68247005AA641 /* ReviewPromptType.swift */,
+				6AB742AD2CBD4C8A00E950EF /* SwiftPrompt.swift */,
 			);
 			path = Prompts;
 			sourceTree = "<group>";
@@ -166,6 +189,37 @@
 				6A5DA4A22CB7D36400B2B1EB /* GrokReview+Output.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		6AB742962CBD066500E950EF /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				6AB7429A2CBD0BC700E950EF /* DTOs */,
+				6AB742972CBD068800E950EF /* Service */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		6AB742972CBD068800E950EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				6AB742982CBD069F00E950EF /* OpenAIRequest.swift */,
+				6AB742A52CBD120600E950EF /* OpenAIReview+Output.swift */,
+				6AB742A72CBD122B00E950EF /* OpenAIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		6AB7429A2CBD0BC700E950EF /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				6AB7429B2CBD0BD700E950EF /* OpenAIRequestDTO.swift */,
+				6AB7429D2CBD0C1700E950EF /* OpenAIMessage.swift */,
+				6AB7429F2CBD111800E950EF /* OpenAIChoice.swift */,
+				6AB742A12CBD115A00E950EF /* OpenAIUsage.swift */,
+				6AB742A32CBD11B000E950EF /* OpenAIReview.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,23 +280,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A2B98B82CB679AC005AA641 /* GrokMessage.swift in Sources */,
+				6A2B98B82CB679AC005AA641 /* GrokRequestDTO.swift in Sources */,
+				6AB7429E2CBD0C1700E950EF /* OpenAIMessage.swift in Sources */,
 				6A5DA4BD2CB7D59800B2B1EB /* ServiceType.swift in Sources */,
 				6A5DA49F2CB7D21100B2B1EB /* ReviewService.swift in Sources */,
+				6AB742AA2CBD127000E950EF /* HTTPURLResponse+Utils.swift in Sources */,
 				6A2B98B22CB66EF9005AA641 /* GrokReviewService.swift in Sources */,
 				6A2B98BE2CB67AB9005AA641 /* GrokUsage.swift in Sources */,
+				6AB742992CBD069F00E950EF /* OpenAIRequest.swift in Sources */,
+				6AB742A22CBD115A00E950EF /* OpenAIUsage.swift in Sources */,
 				6A5DA4A12CB7D2A300B2B1EB /* ReviewOutput.swift in Sources */,
-				6A2B98BA2CB679C4005AA641 /* GrokContent.swift in Sources */,
+				6A2B98BA2CB679C4005AA641 /* GrokMessage.swift in Sources */,
 				6A2B98C22CB68247005AA641 /* ReviewPromptType.swift in Sources */,
 				6A2B98B62CB67970005AA641 /* GrokChoice.swift in Sources */,
 				6A5DA4BB2CB7D58B00B2B1EB /* ServiceFactory.swift in Sources */,
 				6A2B98C02CB68229005AA641 /* ReviewPrompt.swift in Sources */,
+				6AB742A62CBD120600E950EF /* OpenAIReview+Output.swift in Sources */,
 				6A2B98B42CB6793B005AA641 /* GrokReview.swift in Sources */,
 				6A5DA4A32CB7D36400B2B1EB /* GrokReview+Output.swift in Sources */,
+				6AB7429C2CBD0BD700E950EF /* OpenAIRequestDTO.swift in Sources */,
 				6A2B98AE2CB66955005AA641 /* GrokRequest.swift in Sources */,
+				6AB742A42CBD11B000E950EF /* OpenAIReview.swift in Sources */,
+				6AB742AE2CBD4C8A00E950EF /* SwiftPrompt.swift in Sources */,
 				6A2B98B02CB66972005AA641 /* Request.swift in Sources */,
 				6A2B98C52CB6A8E0005AA641 /* String+ReviewPrompt.swift in Sources */,
+				6AB742A82CBD122B00E950EF /* OpenAIService.swift in Sources */,
 				6A2B98A72CB66941005AA641 /* main.swift in Sources */,
+				6AB742A02CBD111800E950EF /* OpenAIChoice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

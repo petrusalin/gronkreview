@@ -9,6 +9,6 @@ import Foundation
 
 struct GrokChoice: Decodable {
     let index: Int
-    let message: GrokContent
+    let message: GrokMessage
     var finishReason: String?
 }

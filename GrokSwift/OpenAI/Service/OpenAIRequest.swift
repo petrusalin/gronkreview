@@ -1,17 +1,18 @@
 //
-//  GrokRequest.swift
+//  OpenAIRequest.swift
 //  GrokSwift
 //
-//  Created by Alin Petrus on 09.10.2024.
+//  Created by Alin Petrus on 14.10.2024.
 //
 
 import Foundation
 
-final class GrokRequest: Request {
-    private let endpoint: String = "https://api.groq.com/openai/v1/chat/completions"
-    
+final class OpenAIRequest: Request {
+    private let endpoint: String = "https://api.openai.com/v1/chat/completions"
+    private let projectId: String
     private let apiKey: String
-    private let dto: GrokRequestDTO
+    
+    private let dto: OpenAIRequestDTO
     
     private var headers: [String: String] {
         [
@@ -20,9 +21,12 @@ final class GrokRequest: Request {
         ]
     }
     
-    init(content: String, key: String) {
+    init(content: String, 
+         key: String,
+         projectId: String = "proj_5yevFC1CG5hxI81vbC03avkV") {
         self.apiKey = key
-        self.dto = GrokRequestDTO(messages: [GrokMessage(content: content)])
+        self.projectId = projectId
+        self.dto = OpenAIRequestDTO(messages: [OpenAIMessage(content: content)])
     }
     
     func asURLRequest() throws -> URLRequest {
@@ -41,5 +45,5 @@ final class GrokRequest: Request {
             throw RequestError.encoding
         }
     }
-    
+
 }

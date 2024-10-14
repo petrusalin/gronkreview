@@ -1,13 +1,13 @@
 //
-//  GrokContent.swift
+//  OpenAIMessage.swift
 //  GrokSwift
 //
-//  Created by Alin Petrus on 09.10.2024.
+//  Created by Alin Petrus on 14.10.2024.
 //
 
 import Foundation
 
-struct GrokContent: Codable {
+struct OpenAIMessage: Codable {
     let role: String
     let content: String
     

@@ -9,10 +9,12 @@ import Foundation
 
 enum ServiceFactory {
     
-    static func service(forType serviceType: ServiceType) -> some ReviewService {
+    static func service(forType serviceType: ServiceType) -> any ReviewService {
         switch serviceType {
         case .groq:
             return GrokReviewService()
+        case .openAI:
+            return OpenAIService()
         }
     }
     

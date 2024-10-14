@@ -7,6 +7,11 @@
 
 import Foundation
 
+enum RequestError: Error {
+    case invalidURL
+    case encoding
+}
+
 protocol Request {
     func asURLRequest() throws -> URLRequest 
 }
