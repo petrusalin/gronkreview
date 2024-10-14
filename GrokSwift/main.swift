@@ -39,7 +39,7 @@ private func run() async {
     do {
         let review = try await service.requestReview(apiKey: key,
                                                      withContent: code, 
-                                                     prompt: ReviewPromptType.swift)
+                                                     prompt: languageType)
         
         print(review.asText())
     } catch {
