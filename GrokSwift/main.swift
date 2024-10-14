@@ -7,9 +7,9 @@
 
 import Foundation
 
-private func run() async {
+private func review() async {
     guard CommandLine.arguments.count == 4 else {
-        print(usage())
+        print("Incorrect number of parameters. \n\(usage())")
         return
     }
     
@@ -17,14 +17,15 @@ private func run() async {
     let key = CommandLine.arguments[2]
     let serviceTypeString = CommandLine.arguments[1]
     
-    guard let type = ServiceType(rawValue: serviceTypeString),
-          let language = filePath.components(separatedBy: ".").last else {
-        print(usage())
+    guard let type = ServiceType(rawValue: serviceTypeString)
+           else {
+        print("Service not supported!. \n\(usage()) ")
         return
     }
     
-    guard let languageType = ReviewPromptType(rawValue: language) else {
-        print("\(language) not supported for review yet")
+    guard let language = filePath.components(separatedBy: ".").last,
+          let  languageType = ReviewPromptType(rawValue: language) else {
+        print("Language not supported for review yet. \n\(usage())")
         return
     }
     
@@ -43,14 +44,21 @@ private func run() async {
         
         print(review.asText())
     } catch {
-        print("Got an error: \(error.localizedDescription)")
+        print("Got an error while doing the review: \(error.localizedDescription)")
     }
 
 }
 
 private func usage() -> String {
-    "Usage: ./GrokSwift {serviceName (openAI / groq)} {apiKey} {FilePath.languageExtension}"
+    """
+    Usage: ./GrokSwift { serviceName } {apiKey} {FilePath.languageExtension}
+    
+     - Supported languages:
+        \(ReviewPromptType.supportedLanguages)
+     - Supported services:
+        \(ServiceType.supportedServices)
+    """
 }
 
-await run()
+await review()
 

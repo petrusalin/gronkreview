@@ -7,7 +7,11 @@
 
 import Foundation
 
-enum ServiceType: String {
+enum ServiceType: String, CaseIterable {
     case groq
     case openAI
+    
+    static var supportedServices: String {
+        self.allCases.map { $0.rawValue }.joined(separator: ", ")
+    }
 }

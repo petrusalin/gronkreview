@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ReviewPromptType: String, ReviewPrompt {
+enum ReviewPromptType: String, CaseIterable, ReviewPrompt {
     case swift = "swift"
     
     func asPromptText() -> String {
@@ -15,6 +15,10 @@ enum ReviewPromptType: String, ReviewPrompt {
         case .swift:
             return swiftReviewPrompt()
         }
+    }
+    
+    static var supportedLanguages: String {
+        self.allCases.map { $0.rawValue }.joined(separator: ", ")
     }
     
 }
